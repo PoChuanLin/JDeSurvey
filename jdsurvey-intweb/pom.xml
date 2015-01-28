@@ -74,7 +74,12 @@
       <artifactId>javax.mail-api</artifactId>
       <version>${javax.mail.version}</version>
     </dependency>
-    
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>${javax.mail.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.apache.tiles</groupId>
       <artifactId>tiles-jsp</artifactId>
