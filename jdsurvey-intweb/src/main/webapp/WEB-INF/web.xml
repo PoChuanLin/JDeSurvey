@@ -27,7 +27,7 @@
 	  -->
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
-		<param-value>file:/JDESURVEY/config/internal/log4j.properties</param-value>
+		<param-value>file:/apps/pSurvey/config/internal/log4j.properties</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -37,10 +37,10 @@
     
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>file:/JDESURVEY/xml/internal/service-context.xml,
-        			 file:/JDESURVEY/xml/internal/security-context.xml,
-        			 file:/JDESURVEY/xml/internal/acl-config.xml,
-        			 file:/JDESURVEY/xml/internal/scheduler-config.xml</param-value>
+        <param-value>file:/apps/pSurvey/xml/internal/service-context.xml,
+        			 file:/apps/pSurvey/xml/internal/security-context.xml,
+        			 file:/apps/pSurvey/xml/internal/acl-config.xml,
+        			 file:/apps/pSurvey/xml/internal/scheduler-config.xml</param-value>
     </context-param>
     
    
@@ -110,7 +110,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>file:/JDESURVEY/xml/internal/webmvc-config.xml</param-value>
+            <param-value>file:/apps/pSurvey/xml/internal/webmvc-config.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

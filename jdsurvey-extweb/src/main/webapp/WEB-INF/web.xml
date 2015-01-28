@@ -27,7 +27,7 @@
 	  -->
 	<context-param>
 		<param-name>log4jConfigLocation</param-name>
-		<param-value>file:/JDESURVEY/config/external/log4j.properties</param-value>
+		<param-value>file:/apps/pSurvey/config/external/log4j.properties</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -37,9 +37,9 @@
     
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>file:/JDESURVEY/xml/external/service-context.xml,
-        			 file:/JDESURVEY/xml/external/security-context.xml,
-        			 file:/JDESURVEY/xml/external/acl-config.xml</param-value>
+        <param-value>file:/apps/pSurvey/xml/external/service-context.xml,
+			file:/apps/pSurvey/xml/external/security-context.xml,
+			file:/apps/pSurvey/xml/external/acl-config.xml</param-value>
     </context-param>
     
     
@@ -108,7 +108,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>file:/JDESURVEY/xml/external/webmvc-config.xml</param-value>
+            <param-value>file:/apps/pSurvey/xml/external/webmvc-config.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
